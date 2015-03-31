@@ -7,6 +7,9 @@ deploy:
   provider: releases
   api_key:
     secure: ldB71pWzCrMHjmsYSmX3nMBrKktrirYK5Swh/OZq7dhTVCqtywbenniRUfJ3VazgNWxYrkoBgt5OpyQPjRpi0G37bCYw+qHSnSpsYw4BSpULATZhrDQ8F43cNKv2dlJ8WnY0AtBBwsPkdmu0aJgL61fUBn/d4rtRc6/vLt/Z8M0=
-  file: war/target/ROOT.war
+  file: war/target/container.war
+  skip_cleanup: true
   on:
     repo: jonieet/aipo-opensocial
+    all_branches: true
+    tags: true
